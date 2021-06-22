@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Demo Cart App Test automtion regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <parameter name="browser" value="chrome"/>
+  <test parallel="tests" name="Registation page Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.opencart.test.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.opencart.test.LoginPageTest -->
+      <class name="com.opencart.test.RegistrationPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUpreg"/>
+          <include name="tearDown"/>
+          <include name="doRegistrationTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.test.RegistrationPageTest -->
+    </classes>
+  </test> <!-- Registation page Test(failed) -->
+</suite> <!-- Failed suite [Demo Cart App Test automtion regression suite] -->

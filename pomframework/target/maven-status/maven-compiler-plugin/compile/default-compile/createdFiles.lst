@@ -1,0 +1,6 @@
+com\qa\opencart\utils\Constants.class
+com\qa\opencart\factory\DriverFactory.class
+com\qa\opencart\utils\ElementUtil.class
+com\qa\opencart\pages\AccountsPage.class
+com\qa\opencart\pages\LoginPage.class
+com\qa\opencart\pages\SearchResultPage.class

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.opencart.test.AccountsPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- com.opencart.test.AccountsPageTest -->
+      <class name="com.opencart.test.LoginPageTest">
+        <methods>
+          <include name="titileTest"/>
+        </methods>
+      </class> <!-- com.opencart.test.LoginPageTest -->
+      <class name="com.opencart.base.BaseTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.opencart.base.BaseTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

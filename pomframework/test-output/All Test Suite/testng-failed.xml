@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test name="C:/Users/Gyana/eclipse-workspace-Selenium/pomframework(failed)">
+    <classes>
+      <class name="com.opencart.test.AccountsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.opencart.test.AccountsPageTest -->
+      <class name="com.opencart.test.LoginPageTest">
+        <methods>
+          <include name="titileTest"/>
+        </methods>
+      </class> <!-- com.opencart.test.LoginPageTest -->
+    </classes>
+  </test> <!-- C:/Users/Gyana/eclipse-workspace-Selenium/pomframework(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

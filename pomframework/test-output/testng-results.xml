@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-04T06:44:39Z" name="Demo Cart App Test automtion regression suite" finished-at="2021-06-04T06:44:56Z" duration-ms="17373">
+    <groups>
+    </groups>
+    <test started-at="2021-06-04T06:44:39Z" name="Login page Test" finished-at="2021-06-04T06:44:45Z" duration-ms="6282">
+      <class name="com.opencart.test.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.test.LoginPageTest@61322f9d]" started-at="2021-06-04T12:14:39Z" name="setUp" finished-at="2021-06-04T12:14:45Z" duration-ms="6094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="titileTest()[pri:0, instance:com.opencart.test.LoginPageTest@61322f9d]" started-at="2021-06-04T12:14:45Z" name="titileTest" finished-at="2021-06-04T12:14:45Z" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.test.LoginPageTest@61322f9d]" started-at="2021-06-04T12:14:45Z" name="tearDown" finished-at="2021-06-04T12:14:45Z" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.test.LoginPageTest -->
+    </test> <!-- Login page Test -->
+    <test started-at="2021-06-04T06:44:39Z" name="Registation page Test" finished-at="2021-06-04T06:44:56Z" duration-ms="17373">
+      <class name="com.opencart.test.RegistrationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.test.RegistrationPageTest@17f7cd29]" started-at="2021-06-04T12:14:39Z" name="setUp" finished-at="2021-06-04T12:14:45Z" duration-ms="6508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpreg()[pri:0, instance:com.opencart.test.RegistrationPageTest@17f7cd29]" started-at="2021-06-04T12:14:45Z" name="setUpreg" finished-at="2021-06-04T12:14:47Z" duration-ms="1353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpreg -->
+        <test-method signature="doRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.test.RegistrationPageTest@17f7cd29]" started-at="2021-06-04T12:14:48Z" name="doRegistrationTest" data-provider="getRegData" finished-at="2021-06-04T12:14:48Z" duration-ms="56" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.qa.opencart.utils.ElementUtil.doSendKeys(ElementUtil.java:50)
+	at com.qa.opencart.pages.RegistrationPage.doRegistration(RegistrationPage.java:41)
+	at com.opencart.test.RegistrationPageTest.doRegistrationTest(RegistrationPageTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegistrationTest -->
+        <test-method signature="doRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.test.RegistrationPageTest@17f7cd29]" started-at="2021-06-04T12:14:48Z" name="doRegistrationTest" data-provider="getRegData" finished-at="2021-06-04T12:14:50Z" duration-ms="2473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ramesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ramesh.p@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9900546850]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegistrationTest -->
+        <test-method signature="doRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.test.RegistrationPageTest@17f7cd29]" started-at="2021-06-04T12:14:50Z" name="doRegistrationTest" data-provider="getRegData" finished-at="2021-06-04T12:14:53Z" duration-ms="2682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rahul_mishra@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9843425679]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[min@124]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegistrationTest -->
+        <test-method signature="doRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.test.RegistrationPageTest@17f7cd29]" started-at="2021-06-04T12:14:53Z" name="doRegistrationTest" data-provider="getRegData" finished-at="2021-06-04T12:14:56Z" duration-ms="3424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rashmi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rashmipandey@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9900546850]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sam@123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.test.RegistrationPageTest@17f7cd29]" started-at="2021-06-04T12:14:56Z" name="tearDown" finished-at="2021-06-04T12:14:56Z" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.test.RegistrationPageTest -->
+    </test> <!-- Registation page Test -->
+  </suite> <!-- Demo Cart App Test automtion regression suite -->
+</testng-results>
